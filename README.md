@@ -1,2 +1,2 @@
-# FinancialPy - Financial Calculations
+# FinancialPy 
 Python calcuations to aid in learning python and finance.
