@@ -1,2 +1,2 @@
 # financialpy 
-Python calcuations to aid in learning python and finance.
+Python web service to aid in learning python and finance.
