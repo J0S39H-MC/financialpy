@@ -4,8 +4,8 @@ app = Flask(__name__)
 
 @app.route("/amortization/payment/", methods=['POST'])
 def get_payment_amount():
-    if not request.json:
-        abort(400)
+    # if not request.json:
+    #     abort(400)
         
     p = request.json.get('principal', 0)
     r = request.json.get('rate',0.0)
@@ -21,6 +21,10 @@ def get_payment_amount():
 
     return  jsonify({ "payment_amount":  round(pmt, 2)  })
  
+@app.route("/amortization/helloworld/", methods=['GET'])
+def get_hello():
+    return jsonify("hello world")
+
 if __name__ == "__main__":
-    app.run()
+    app.run(host="0.0.0.0", debug=True)
 
